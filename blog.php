@@ -1,39 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>Bienes Raices</title>
-</head>
-<body>
-
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-                    <img src="build/img/logo.svg" alt="Logo tipo de bienes raices">
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="Icono para mas opciones">
-                </div>
-
-                <div class="derecha">
-                    <img class="dark-mode" src="build/img/dark-mode.svg" alt="Cambiar a modo oscuro">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-
-            </div> <!--Cierre de la barra-->
-            <h1>Venta de Casas y Departamentos Exlusivos de Lujo    </h1>
-        </div>
-    </header>
+<?php 
+require "includes/funciones.php";
+incluirTemplate("header");
+?>
 
     <main class="contenedor seccion contenido-centrado">
         <h1>Nuestro Blog</h1>
@@ -48,7 +16,7 @@
             </div>
 
             <div class="texto-entrada">
-                <a href="entrada.html">
+                <a href="entrada.php">
                     <h4>Terraza en el techo de tu casa</h4>
                     <p>Escrito el: <span>20/04/2021</span> por: <span>Admin</span></p>
 
@@ -68,7 +36,7 @@
             </div>
 
             <div class="texto-entrada">
-                <a href="entrada.html">
+                <a href="entrada.php">
                     <h4>Guía para la decoracion de tu hogar</h4>
                     <p>Escrito el: <span>20/04/2021</span> por: <span>Admin</span></p>
 
@@ -86,7 +54,7 @@
             </div>
 
             <div class="texto-entrada">
-                <a href="entrada.html">
+                <a href="entrada.php">
                     <h4>Terraza en el techo de tu casa</h4>
                     <p>Escrito el: <span>20/04/2021</span> por: <span>Admin</span></p>
 
@@ -106,7 +74,7 @@
             </div>
 
             <div class="texto-entrada">
-                <a href="entrada.html">
+                <a href="entrada.php">
                     <h4>Guía para la decoracion de tu hogar</h4>
                     <p>Escrito el: <span>20/04/2021</span> por: <span>Admin</span></p>
 
@@ -116,18 +84,6 @@
         </article>
     </main>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos Los Derechos Reservados 2021 &copy;</p>
-    </footer>
-    <script src="src/js/modernizr.js" > </script>
-    <script src="build/js/bundle.min.js" > </script>
-</body>
-</html>
+<?php 
+    incluirTemplate("footer");
+?>
